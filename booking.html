@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Table - Flavor Town</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">🍽 Flavor Town</div>
+        <nav>
+            <a href="#" onclick="logout()">Logout</a>
+        </nav>
+    </header>
+
+    <div class="form-container">
+        <h2>Book a Table</h2>
+        <form id="bookingForm">
+            <input type="text" placeholder="Full Name" id="bName" required>
+            <input type="email" placeholder="Email" id="bEmail" required>
+            <input type="tel" placeholder="Phone Number" id="bPhone" required>
+            <input type="date" id="bDate" required>
+            <input type="time" id="bTime" required>
+            <select id="bGuests" required>
+                <option value="">Number of Guests</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5+">5+</option>
+            </select>
+            <button type="submit">Book Now</button>
+        </form>
+        <div id="bookingMessage"></div>
+        <div id="bookingList"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
